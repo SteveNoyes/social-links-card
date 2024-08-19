@@ -1,0 +1,114 @@
+/* 
+  Mobile: 375px
+  Desktop: 1440px 
+  Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+*/
+
+/*
+Font
+Family: Inter
+Weights: 400, 600, 700
+*/
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+      url('../fonts/Inter-Bold.woff') format('woff'),
+      url('../fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+      url('../fonts/Inter-Regular.woff') format('woff'),
+      url('../fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Semi Bold';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+      url('../fonts/Inter-SemiBold.woff') format('woff'),
+      url('../fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Inter';
+  color: var(--white);
+  background-color: var(--grey-900);
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --border-radius: 11px;
+}
+
+.card-wrapper {
+  background-color: var(--grey-800);
+  border-radius: var(--border-radius);
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.info-content img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 30px 0;
+}
+
+.info-content h2 {
+  font-size: 25px;
+  font-family: 'Inter Semi Bold';
+  padding-bottom: 10px;
+}
+
+.info-content h3 {
+  font-size: 14px;
+  font-family: 'Inter Semi Bold';
+  padding-bottom: 30px;
+  color: var(--green);
+}
+
+.info-content p {
+  padding-bottom: 25px;
+}
+
+.card-button-list button {
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  width: 280px;
+  margin-bottom: 15px;
+  height: 45px;
+  border: none;
+  color: var(--white);
+  background-color: var(--grey-700);
+  font-family: 'Inter Semi Bold';
+  font-size: 15px;
+}
+
+.card-button-list button:hover {
+  background-color: var(--green);
+  cursor: pointer;
+  color: var(--grey-800);
+}
+
+.card-button-list {
+  padding-bottom: 20px;
+}
