@@ -7,8 +7,6 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Highlight](#highlight)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 
 ## Overview
 
@@ -20,12 +18,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop View](./asset/images/Screenshot 2024-08-18 211758.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/SteveNoyes/social-links-card](https://github.com/SteveNoyes/social-links-card)
+- Live Site URL: [https://stevenoyes.github.io/social-links-card/](https://stevenoyes.github.io/social-links-card/)
 
 ## My process
 
@@ -40,22 +38,30 @@ Users should be able to:
 ### Highlight
 
 ```html
-<h1></h1>
+<div class="card-wrapper">
+  <div class="info-content">
+    <img src="./assets/images/avatar-jessica.jpeg" alt="Card Avatar">
+    <h2>Jessica Randall</h2>
+    <h3>London, United Kingdom</h3>
+    <p>"Front-end developer and avid reader."</p>
+  </div>
+  <div class="card-button-list">
+    <button>GitHub</button>
+    <button>Frontend Mentor</button>
+    <button>LinkedIn</button>
+    <button>Twitter</button>
+    <button>Instagram</button>
+  </div>
+</div>
 ```
 ```css
-.this {
-  color: ;
+:root {
+  --green: hsl(75, 94%, 57%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --border-radius: 11px;
 }
 ```
-```js
-const thisFunc = () => {
-  console.log('')
-}
-```
-
-### Continued development
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
